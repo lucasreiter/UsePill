@@ -1,0 +1,13 @@
+{
+  "build": {
+    "gerarapk": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {}
+  }
+}
+
+
+
