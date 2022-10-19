@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#2B335A',
         alignItems: 'center',
-        //justifyContent: 'center',
+        justifyContent: 'center',
     },
     containerNome: {
         //flex: 1,        
@@ -142,10 +142,11 @@ const styles = StyleSheet.create({
         //padding: 50    
     },
     containerBotoes: {
-        backgroundColor: '#ffff',
+        backgroundColor: '#2B335A',
         alignItems: 'center',
         justifyContent: 'center',
         width: '100%',
+        marginLeft: '10%'
 
 
     },

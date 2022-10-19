@@ -30,7 +30,7 @@ export default function ListarMedicacoes({ navigation }) {
                             <View style={styles.medicacoes}>
                                 <Text
                                     style={styles.itens}
-                                    onPress={() => navigation.navigate('Editar Medicacoes', { medicacoes: item })}
+                                    onPress={() => navigation.navigate('Editar Medicações', { medicacoes: item })}
                                 >
                                     {item.medicamento}
                                 </Text>
@@ -46,7 +46,7 @@ export default function ListarMedicacoes({ navigation }) {
                     <View style={styles.addMedicacoes}>
                         <Text
                             style={styles.Add}
-                            onPress={() => navigation.navigate('Cadastrar Medicacoes')}
+                            onPress={() => navigation.navigate('Cadastrar Medicações')}
                         >
                             +
                     </Text>

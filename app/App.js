@@ -26,6 +26,7 @@ import ListarContatos from './src/componentes/Contatos';
 import Home from './src/componentes/Home';
 import CadastrarTarefas from './src/componentes/CadastrarTarefa'
 import ListaTarefas from './src/componentes/ListaTarefas';
+import Perfis from './src/componentes/Perfis';
 
 
 
@@ -39,7 +40,10 @@ export default function App() {
       <Stack.Navigator
         initialRouteName="Login"
         options={{
-          headerShown: false
+          title: '',
+          headerStyle:  { backgroundColor: '#83C4D8' , headerTintColor: '#FFF' },
+
+          headerShown: false,
         
         }}>
         <Stack.Screen
@@ -50,26 +54,27 @@ export default function App() {
           }}
         />
 
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Cadastro" component={CadastroUsuarios} />
-        <Stack.Screen name="Cadastrar Medicos" component={CadastroMedicos} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
-        <Stack.Screen name="Editar Medicos" component={EditarMedicos} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
-        <Stack.Screen name="Medicos" component={ListarMedicos} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
+        <Stack.Screen name="Login" component={Login} options={{ headerStyle: { backgroundColor: '#83C4D8',  headerTintColor: '#FFF' }, headerShown: false, title: '' }  } />
+        <Stack.Screen name="Cadastro" component={CadastroUsuarios}  options={{ headerStyle: { backgroundColor: '#83C4D8',  headerTintColor: '#FFF' }, title: '' }  } />
+        <Stack.Screen name="Cadastrar Médicos" component={CadastroMedicos} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF'}} />
+        <Stack.Screen name="Editar Médicos" component={EditarMedicos} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
+        <Stack.Screen name="Médicos" component={ListarMedicos} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
         <Stack.Screen name="Cadastro Dados Pessoais" component={CadastroDadosPessoais} options={{ headerStyle: { backgroundColor: '#2b335a' }, headerTintColor: '#FFF' }} />
         <Stack.Screen name="Dados" component={ListarDados} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }}  />
         <Stack.Screen name="Editar Dados" component={EditarDados} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }}  />
-        <Stack.Screen name="Cadastrar Medicacoes" component={CadastroMedicacoes} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
-        <Stack.Screen name="Editar Medicacoes" component={EditarMedicacoes} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
-        <Stack.Screen name="Medicacoes" component={ListarMedicacoes} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
+        <Stack.Screen name="Cadastrar Medicações" component={CadastroMedicacoes} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
+        <Stack.Screen name="Editar Medicações" component={EditarMedicacoes} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
+        <Stack.Screen name="Medicações" component={ListarMedicacoes} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }} />
         <Stack.Screen name="Cadastrar Consultas" component={CadastroConsultas} />
         <Stack.Screen name="Editar Consultas" component={EditarConsultas} />
         <Stack.Screen name="Consultas" component={ListarConsultas} />
         <Stack.Screen name="Cadastrar Contatos" component={CadastroContatos} />
         <Stack.Screen name="Editar Contatos" component={EditarContatos} />
         <Stack.Screen name="Contatos" component={ListarContatos} />
-        <Stack.Screen name="Menu" component={Home} options={{ headerStyle: { backgroundColor: '#fbcb76' }, headerTintColor: '#2B335A' }} />
-        <Stack.Screen name="Agenda" component={CadastrarTarefas}  options={{ headerStyle: { backgroundColor: '#2b335a' }, headerTintColor: '#FFF' }}  />
+        <Stack.Screen name="Menu" component={Home} options={{ headerStyle: { backgroundColor: '#fbcb76' }, headerTintColor: '#2B335A', title: '' }} />
+        <Stack.Screen name="Agenda" component={CadastrarTarefas}  options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF', title: '' }}  />
         <Stack.Screen name="Listar Tarefas" component={ListaTarefas} options={{ headerStyle: { backgroundColor: '#83C4D8' }, headerTintColor: '#FFF' }}  />
+        <Stack.Screen name="Perfis" component={Perfis}  options={{ headerStyle: { backgroundColor: '#2b335a' }, headerTintColor: '#FFF', title: '' }} />
 
 
       </Stack.Navigator>

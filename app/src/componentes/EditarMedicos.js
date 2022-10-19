@@ -29,7 +29,7 @@ export default function EditarMedicos({ navigation, route }) {
                 endereco: endereco,
                 observacao: observacao
             })
-            navigation.navigate('Medicos')
+            navigation.navigate('Médicos')
         }
     }
 
@@ -44,10 +44,10 @@ export default function EditarMedicos({ navigation, route }) {
                 [
                 {
                     text: "Não",
-                    onPress: () => navigation.navigate('Medicos'),
+                    onPress: () => navigation.navigate('Médicos'),
                     style: 'cancel'
                 },
-                { text: "Sim", onPress: () => {database.collection("medicos").doc(id).delete(), navigation.navigate('Medicos')} }
+                { text: "Sim", onPress: () => {database.collection("medicos").doc(id).delete(), navigation.navigate('Médicos')} }
                 ],
             )
         }
@@ -55,7 +55,7 @@ export default function EditarMedicos({ navigation, route }) {
 
     function deleteMedicos(id) {
         database.collection("medicos").doc(id).delete()
-        navigation.navigate('Medicos')
+        navigation.navigate('Médicos')
     }
 
     return (

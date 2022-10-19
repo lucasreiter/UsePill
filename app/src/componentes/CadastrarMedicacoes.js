@@ -28,7 +28,7 @@ export default function CadastroMedicacoes({ navigation }) {
                 dias: dias,
                 observacao: observacao
             })
-            navigation.navigate('Medicacoes')
+            navigation.navigate('Medicações')
         }
     }
 

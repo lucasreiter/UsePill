@@ -24,7 +24,7 @@ export default function Home({ navigation }) {
         <View style={styles.box}>
           <TouchableOpacity
             style={styles.inner}
-            onPress={() => navigation.navigate("Medicos")}
+            onPress={() => navigation.navigate("Médicos")}
           >
             <Image source={require('../../assets/medicos.png')} resizeMode='cover'  ></Image>
           </TouchableOpacity>
@@ -38,7 +38,7 @@ export default function Home({ navigation }) {
         <View style={styles.box}>
           <TouchableOpacity
             style={styles.inner}
-            onPress={() => navigation.navigate("Medicacoes")}
+            onPress={() => navigation.navigate("Medicações")}
           >
             <Image source={require('../../assets/medicamentos.png')} resizeMode='cover'  ></Image>
           </TouchableOpacity>
@@ -78,11 +78,12 @@ export default function Home({ navigation }) {
         <View style={styles.box}>
           <TouchableOpacity
             style={styles.inner}
+
           >
             <Image source={require('../../assets/nutricao.png')} resizeMode='cover'  ></Image>
           </TouchableOpacity>
           <View style={styles.teste}>
-            <Text style={styles.texto}>Nutrição</Text>
+            <Text style={styles.texto}>NUTRIÇÃO</Text>
           </View>
 
         </View>

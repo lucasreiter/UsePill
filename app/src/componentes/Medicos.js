@@ -30,9 +30,9 @@ export default function ListarMedicos({ navigation }) {
                             <View style={styles.medico}>
                                 <Text
                                     style={styles.nomeMed}
-                                    onPress={() => navigation.navigate('Editar Medicos', { medicos: item })}
+                                    onPress={() => navigation.navigate('Editar Médicos', { medicos: item })}
                                 >
-                                    {item.nome}
+                                    Dr(a). {item.nome}
                                 </Text>
                                 <Text
                                     style={styles.espMed}
@@ -50,7 +50,7 @@ export default function ListarMedicos({ navigation }) {
                     <View style={styles.addMedico}>
                         <Text
                             style={styles.Add}
-                            onPress={() => navigation.navigate('Cadastrar Medicos')}
+                            onPress={() => navigation.navigate('Cadastrar Médicos')}
                         >
                             +
                     </Text>

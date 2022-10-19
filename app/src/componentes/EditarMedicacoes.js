@@ -29,7 +29,7 @@ export default function EditarMedicacoes({ navigation, route }) {
                 dias: dias,
                 observacao: observacao
             })
-            navigation.navigate('Medicacoes')
+            navigation.navigate('Medicações')
         }
     }
 
@@ -44,10 +44,10 @@ export default function EditarMedicacoes({ navigation, route }) {
                 [
                 {
                     text: "Não",
-                    onPress: () => navigation.navigate('Medicacoes'),
+                    onPress: () => navigation.navigate('Medicações'),
                     style: 'cancel'
                 },
-                { text: "Sim", onPress: () => {database.collection("medicacoes").doc(id).delete(), navigation.navigate('Medicacoes')} }
+                { text: "Sim", onPress: () => {database.collection("medicacoes").doc(id).delete(), navigation.navigate('Medicações')} }
                 ],
             )
         }
@@ -55,7 +55,7 @@ export default function EditarMedicacoes({ navigation, route }) {
 
     function deleteMedicacoes(id) {
         database.collection("medicacoes").doc(id).delete()
-        navigation.navigate('Medicacoes')
+        navigation.navigate('Medicações')
     }
 
     return (

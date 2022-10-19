@@ -31,7 +31,7 @@ export default function CadastroMedicos({ navigation }) {
                 endereco: endereco,
                 observacao: observacao
             })
-            navigation.navigate('Medicos')
+            navigation.navigate('Médicos')
         }
     }
 

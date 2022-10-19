@@ -27,7 +27,7 @@ export default function Login({ navigation }) {
                 const user = userCredential.user;
                 console.log(user.email)
                 //limpadados()
-                navigation.navigate('Menu')
+                navigation.navigate('Perfis')
 
             })
             .catch((error) => {
